@@ -1,5 +1,5 @@
 import React from "react";
-import '../css/App.css';
+import '../css/style.css';
 import { useState } from "react";
 
 function Register(){
@@ -48,7 +48,7 @@ function Register(){
                     <input type="password" className="form-cntrl" name="password" onChange={inputChange}></input>
                 </div>
                 <div className="form-grp">
-                    <button type="submit">Save</button>
+                    <button type="submit">Register</button>
                 </div>
             </form>
         </div>

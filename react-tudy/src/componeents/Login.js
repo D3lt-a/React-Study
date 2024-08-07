@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import '../css/App.css';
+import '../css/style.css';
 
 function Login() {
     const [savedData, setSavedData] = useState({})
@@ -32,15 +32,15 @@ function Login() {
                 <div className='flex-col'>
                     <div className='frm-grp'>
                         <label>Username</label>
-                        <input type='text' name='logginusername' onChange={inputChange} />
+                        <input type='text' className="form-cntrl" name='logginusername' onChange={inputChange} />
                     </div>
                     <div className='frm-grp'>
                         <label>Email</label>
-                        <input type='email' name='logginemail' onChange={inputChange} />
+                        <input type='email' className="form-cntrl" name='logginemail' onChange={inputChange} />
                     </div>
                     <div className='frm-grp'>
                         <label>Password</label>
-                        <input type='password' name='logginpassword' onChange={inputChange} />
+                        <input type='password' className="form-cntrl" name='logginpassword' onChange={inputChange} />
                     </div>
                     <div className='frm-grp'>
                         <button type='submit'> Login </button>

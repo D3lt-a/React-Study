@@ -16,14 +16,11 @@
   width: 100vw;
 }
 
-
-
-
-
-
 a {
   cursor: pointer;
-  color: blue;
-  padding-left: 10px;
-  text-decoration: underline;
+  color: rgb(150, 150, 181);
+  text-decoration: none;
+  padding: 0 10px;
+  transition: color 0.3s ease;
+  font-weight: 800;
 }
