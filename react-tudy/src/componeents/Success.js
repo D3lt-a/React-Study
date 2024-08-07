@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../css/Success.css'
 
 
 function Success() {
@@ -16,24 +17,20 @@ function Success() {
 
 
     return (
-        <div className="Users">
-            <h1>Success</h1>
-            <div>
-                <ul id="userList">
-                    {data.map((el, index) => (
-                        (
-                            <li key={index}>
-                                <p><strong>Fullname </strong>: {el.fullname}</p>
-                                <p><strong>Username</strong>: {el.username}</p>
-                                <p><strong>Email</strong>: {el.email}</p>
-                                <p><strong>Telephone</strong>: {el.telephone}</p>
-                            </li>
-                        )
-                    ))}
-                </ul>
-            </div>
+        <div className="success-container">
+          <h1>Success</h1>
+          <ul id="userList">
+            {data.map((el, index) => (
+              <li key={index} className="user-card">
+                <p>Fullname: {el.fullname}</p>
+                <p>Username: {el.username}</p>
+                <p>Email: {el.email}</p>
+                <p>Telephone: {el.telephone}</p>
+              </li>
+            ))}
+          </ul>
         </div>
-    )
+      )
 }
 
 export default Success
