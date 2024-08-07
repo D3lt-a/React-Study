@@ -1,0 +1,29 @@
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  margin: 0;
+  padding: 5;
+  background-color: teal;
+  color: whitesmoke;
+}
+
+.App{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 50vh;
+  width: 100vw;
+}
+
+
+
+
+
+
+a {
+  cursor: pointer;
+  color: blue;
+  padding-left: 10px;
+  text-decoration: underline;
+}
