@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
 
 function Success() {
-    const users = JSON.parse(localStorage.getItem('users'))
+    const [data, setData] = useState(JSON.parse(localStorage.getItem('users')))
+    // const users = JSON.parse(localStorage.getItem('users'))
 
-    const userList = document.getElementById('userList');
+    // const userList = document.getElementById('userList');
 
     // users.forEach(user => {
     //     const li = document.createElement('li');
@@ -12,7 +13,6 @@ function Success() {
     //     userList.appendChild(li);
     // });
 
-    
 
 
     return (
@@ -20,7 +20,16 @@ function Success() {
             <h1>Success</h1>
             <div>
                 <ul id="userList">
-
+                    {data.map((el, index) => (
+                        (
+                            <li key={index}>
+                                <p><strong>Fullname </strong>: {el.fullname}</p>
+                                <p><strong>Username</strong>: {el.username}</p>
+                                <p><strong>Email</strong>: {el.email}</p>
+                                <p><strong>Telephone</strong>: {el.telephone}</p>
+                            </li>
+                        )
+                    ))}
                 </ul>
             </div>
         </div>
