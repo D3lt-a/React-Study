@@ -14,7 +14,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
       <Route path='' element={<Home />} />
-      <Route path='about' element={<About />} />
+      <Route path='about' element={<About />} /> 
       <Route path='contact' element={<Contact />} />
       <Route
         // loader={githubInfoLoader} //the githu... is used to as a method for preprocessing
