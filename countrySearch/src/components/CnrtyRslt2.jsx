@@ -10,7 +10,7 @@ function CntryRsl12() {
     };
 
     const handleSubmit = (e) => {
-        e.preventDefault(); // Prevent form from causing a page reload
+        e.preventDefault(); 
 
         if (srch) {
             fetch(`https://restcountries.com/v3.1/name/${srch}`)
@@ -23,7 +23,7 @@ function CntryRsl12() {
                 .then((data) => {
                     console.log(data);
                     setData(data);
-                    setError(null); // Clear any previous errors
+                    setError(null); 
                 })
                 .catch((err) => {
                     console.error('Fetch error:', err);
