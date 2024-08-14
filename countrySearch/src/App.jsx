@@ -1,5 +1,4 @@
-// import Cntrysrch from './components/cntrySrch'
-import CntryRslt from './components/CntryRslt'
+import CnrtyRslt2 from './components/CnrtyRslt2'
 
 
 function App() {
@@ -8,8 +7,7 @@ function App() {
   return (
     <>
       <div className='bg-emerald-700 grid h-screen place-items-center w-full'>
-        {/* <Cntrysrch /> */}
-        <CntryRslt/>
+         <CnrtyRslt2 />
       </div>
     </>
   ) 
