@@ -1,12 +1,11 @@
-/* eslint-disable react/prop-types */
 
-function TodoComponent({Title,Description}) {
+function todocomponent({Title,Description}) {
   return (
     <div>
-      <h3>{Title}</h3>
+      <h1>{Title}</h1>
       <p>{Description}</p>
     </div>
   )
 }
 
-export default TodoComponent
+export default todocomponent
